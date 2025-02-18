@@ -1,4 +1,4 @@
-# Chatgpt
+# ChatGPT
 - Tokenização: https://platform.openai.com/tokenizer
 - Embora as respostas geradas pela versão 4 sejam mais precisas e relevantes, elas podem levar mais tempo para serem geradas do que as respostas da versão 3.5.
 - [OpenAI GPT 4](https://openai.com/index/gpt-4-research/)
