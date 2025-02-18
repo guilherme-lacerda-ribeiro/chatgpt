@@ -13,4 +13,13 @@ Os prompts de estilo de conclusão aproveitam como os modelos de linguagem tenta
 2. Testar prompts de demonstração contendo exemplos.
 Semelhante aos prompts de estilo de conclusão, as demonstrações podem mostrar ao modelo o que João deseja que ele faça. Essa abordagem às vezes é chamada de aprendizado de poucos disparos (Few-Shot learning), pois o modelo aprende com alguns exemplos fornecidos no prompt.
 
+3. Quebrar a demanda em pequenas tarefas.
+4. Solicitar gerar outras respostas caso não esteja satisfatória.
+5. Especifique a saída (visando automação por exemplo) colocando o "schema" da resposta.
+   ```js
+   titulo=""
+   ideia=""
+   canais=[]
+   ```
+
 Precisão (acurácia): https://cdn3.gnarususercontent.com.br/3146-chatgpt/acuracia.png
