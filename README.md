@@ -3,6 +3,7 @@
 - Embora as respostas geradas pela versão 4 sejam mais precisas e relevantes, elas podem levar mais tempo para serem geradas do que as respostas da versão 3.5.
 - [OpenAI GPT 4](https://openai.com/index/gpt-4-research/)
 - [Tech Report](https://arxiv.org/abs/2303.08774)
+- Precisão (acurácia): https://cdn3.gnarususercontent.com.br/3146-chatgpt/acuracia.png
 
 Estratégias:
 
@@ -21,5 +22,5 @@ Semelhante aos prompts de estilo de conclusão, as demonstrações podem mostrar
    ideia=""
    canais=[]
    ```
+6. Para automatização, gere 100 testes e avalie se é confiável. Se quiser que gere vários exemplos de uma só vez, pode instruir algo como _Sugestão #k_ no início do schema do trecho de código, para que ele insira um _contador_.
 
-Precisão (acurácia): https://cdn3.gnarususercontent.com.br/3146-chatgpt/acuracia.png
