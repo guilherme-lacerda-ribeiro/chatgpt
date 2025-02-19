@@ -29,6 +29,10 @@
 
 ## Automatizações
 Usar o chatGPT para automatizar coisas.
+- Dicas gerais para textos:
+  - Dividir as tarefas em etapas pode ajudar a simplificar o processo de execução e tornar a resposta mais eficiente.
+  - Delimitadores ajudam o ChatGPT a entender a estrutura do texto original e a produzir resultados mais precisos e relevantes.
+  - É interessante especificar qual deve ser o tamanho máximo do resumo.
 - Texto e traduções, especifique "variáveis" para melhorar a compreensão do chat (no exemplo foi XXXXX).
    ```
    Resuma o texto: """
