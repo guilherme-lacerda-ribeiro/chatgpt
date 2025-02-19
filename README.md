@@ -4,7 +4,14 @@
 - [OpenAI GPT 4](https://openai.com/index/gpt-4-research/)
 - [Tech Report](https://arxiv.org/abs/2303.08774)
 - Precisão (acurácia): https://cdn3.gnarususercontent.com.br/3146-chatgpt/acuracia.png
-- Quando iniciamos um diálogo, a primeira mensagem não é a minha interação, por debaixo dos panos já há instruções do sistema operando. Podemos mudar as mensagens de sistema via API ou no [Playground](https://platform.openai.com/playground/chat), ambos pagos.
+
+## Orientações Gerais
+- """ (tres aspas duplas) ou ``` (tres crases) para separar o código da pergunta.
+- _____ (sublinhado) para indicar um formulário (em texto mesmo).
+- Clareza e especificidade.
+- Forneça contexto.
+- Divida uma pergunta complexa em várias perguntas mais simples.
+- chatGPT tem limites de memória então quando o diálogo fica grande, ele vai esquecendo as interações anteriores.
 
 ## Estratégias
 
@@ -59,11 +66,17 @@ Usar o chatGPT para automatizar coisas.
     Sentimento da Resenha: 
     ```
 
-## Orientações Gerais
-- """ (tres aspas duplas) ou ``` (tres crases) para separar o código da pergunta.
-- _____ (sublinhado) para indicar um formulário (em texto mesmo).
-- Clareza e especificidade.
-- Forneça contexto.
-- Divida uma pergunta complexa em várias perguntas mais simples.
-- chatGPT tem limites de memória então quando o diálogo fica grande, ele vai esquecendo as interações anteriores.
+## Automatização
+Quando iniciamos um diálogo, a primeira mensagem não é a minha interação, por debaixo dos panos já há instruções do sistema operando. Podemos mudar as mensagens de sistema via API ou no [Playground](https://platform.openai.com/playground/chat), ambos pagos.
 
+Quando nós deixamos a temperatura definida igual a 0 no playground, o modelo sempre retornará conclusões idênticas ou muito semelhantes. Por outro lado, se você aumentar a temperatura, os resultados não serão tão parecidos. Por isso, quando a temperatura está acima de 0, enviar o mesmo prompt resulta em conclusões diferentes a cada vez. A redução da temperatura significa que haverá menos riscos e as conclusões serão mais precisas e determinísticas.
+
+O Maximum Length define o comprimento máximo que uma resposta pode ter.
+
+Top P, também conhecido como Nucleus Sampling, é uma técnica que controla a diversidade das respostas, considerando apenas as probabilidades das palavras mais prováveis. Ao definir um valor para o Top P, como 1, por exemplo, o modelo seleciona as palavras mais prováveis até atingir uma probabilidade acumulada de 100%. Isso evita que o modelo gere respostas muito raras ou improváveis.
+
+Frequency Penalty, uma configuração que controla a repetição de tokens em uma resposta. Definir um valor mais alto para a penalidade de frequência incentiva o modelo a evitar repetições excessivas e produzir respostas mais variadas.
+
+Presence Penalty é a configuração que controla a preferência do modelo por incluir ou evitar informações específicas nas respostas. Quando você aumenta o valor do Presence Penalty, o modelo tem uma tendência maior de evitar mencionar palavras ou frases que você forneceu como instrução (prompt). Presence Penalty pode ser útil quando você deseja que o modelo gere respostas mais criativas, evitando ser excessivamente dependente das informações fornecidas. Quando as instruções são mais longas ou complexas, um valor alto de Presence Penalty pode fazer com que o modelo ignore completamente as informações fornecidas.
+
+[Referência](https://platform.openai.com/docs/concepts).
