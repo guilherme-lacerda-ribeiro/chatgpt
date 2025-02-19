@@ -7,23 +7,33 @@
 
 ## Estratégias
 
-1. Testar prompts de conclusão, induzindo o modelo a completar o início do que deseja.
-Os prompts de estilo de conclusão aproveitam como os modelos de linguagem tentam escrever o texto que eles acham que provavelmente virá a seguir. Para orientar o modelo, basta iniciar um padrão ou frase que será completada pela saída que ele deseja ver.
-"O chatgpt é ...".
+- Testar prompts de conclusão, induzindo o modelo a completar o início do que deseja.
+  Os prompts de estilo de conclusão aproveitam como os modelos de linguagem tentam escrever o texto que eles acham que provavelmente virá a seguir. Para orientar o modelo, basta iniciar um padrão ou frase que será completada pela saída que ele deseja ver.  
+  *Exemplo:* `"O chatgpt é ..."`.
 
-2. Testar prompts de demonstração contendo exemplos.
-Semelhante aos prompts de estilo de conclusão, as demonstrações podem mostrar ao modelo o que João deseja que ele faça. Essa abordagem às vezes é chamada de aprendizado de poucos disparos (Few-Shot learning), pois o modelo aprende com alguns exemplos fornecidos no prompt.
+- Testar prompts de demonstração contendo exemplos.  
+  Semelhante aos prompts de estilo de conclusão, as demonstrações podem mostrar ao modelo o que João deseja que ele faça. Essa abordagem às vezes é chamada de *aprendizado de poucos disparos* (*Few-Shot learning*), pois o modelo aprende com alguns exemplos fornecidos no prompt.
 
-3. Quebrar a demanda em pequenas tarefas.
-4. Solicitar gerar outras respostas caso não esteja satisfatória.
-5. Especifique a saída (visando automação por exemplo) colocando o "schema" da resposta.
-   ```js
-   titulo=""
-   ideia=""
-   canais=[]
+- Quebrar a demanda em pequenas tarefas.
+
+- Solicitar gerar outras respostas caso não esteja satisfatória.
+
+- Especificar a saída (visando automação, por exemplo) colocando o *schema* da resposta.
+  ```js
+  titulo=""
+  ideia=""
+  canais=[]
    ```
-6. Para automatização, gere 100 testes e avalie se é confiável. Se quiser que gere vários exemplos de uma só vez, pode instruir algo como _Sugestão #k_ no início do schema do trecho de código, para que ele insira um _contador_.
-7. Consulte "várias ideias" e pegue o melhor entre elas. Ou instrua o chat para dar notas entre os pontos positivos e negativos de cada ideia e, quem sabe (outra fala), gerar uma nova ideia a partir dos pontos fortes obtidos.
+- Para automatização, gere 100 testes e avalie se é confiável. Se quiser que gere vários exemplos de uma só vez, pode instruir algo como _Sugestão #k_ no início do schema do trecho de código, para que ele insira um _contador_.
+- Consulte "várias ideias" e pegue o melhor entre elas. Ou instrua o chat para dar notas entre os pontos positivos e negativos de cada ideia e, quem sabe (outra fala), gerar uma nova ideia a partir dos pontos fortes obtidos.
+- Texto e traduções, especifique "variáveis" para melhorar a compreensão do chat (no exemplo foi XXXXX).
+   ```
+   Resuma o texto: """
+   cole o texto na lingua que quiser
+   """
+   Idioma: XXXXX
+   Resumo em XXXXX: _____
+   ```
 
 ## Orientações Gerais
 - """ (tres aspas duplas) ou ``` (tres crases) para separar o código da pergunta.
