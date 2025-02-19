@@ -26,6 +26,9 @@
    ```
 - Para automatização, gere 100 testes e avalie se é confiável. Se quiser que gere vários exemplos de uma só vez, pode instruir algo como _Sugestão #k_ no início do schema do trecho de código, para que ele insira um _contador_.
 - Consulte "várias ideias" e pegue o melhor entre elas. Ou instrua o chat para dar notas entre os pontos positivos e negativos de cada ideia e, quem sabe (outra fala), gerar uma nova ideia a partir dos pontos fortes obtidos.
+
+## Automatizações
+Usar o chatGPT para automatizar coisas.
 - Texto e traduções, especifique "variáveis" para melhorar a compreensão do chat (no exemplo foi XXXXX).
    ```
    Resuma o texto: """
@@ -34,6 +37,7 @@
    Idioma: XXXXX
    Resumo em XXXXX: _____
    ```
+- Especificar o formato de saída. Exemplo: _Capture os pontos negativos do comentário e me devolva no formato `pontos_negativos=[]`.
 
 ## Orientações Gerais
 - """ (tres aspas duplas) ou ``` (tres crases) para separar o código da pergunta.
