@@ -4,6 +4,7 @@
 - [OpenAI GPT 4](https://openai.com/index/gpt-4-research/)
 - [Tech Report](https://arxiv.org/abs/2303.08774)
 - Precisão (acurácia): https://cdn3.gnarususercontent.com.br/3146-chatgpt/acuracia.png
+- Quando iniciamos um diálogo, a primeira mensagem não é a minha interação, por debaixo dos panos já há instruções do sistema operando. Podemos mudar as mensagens de sistema via API ou no [Playground](https://platform.openai.com/playground/chat), ambos pagos.
 
 ## Estratégias
 
