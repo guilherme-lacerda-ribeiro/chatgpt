@@ -23,6 +23,7 @@ Semelhante aos prompts de estilo de conclusão, as demonstrações podem mostrar
    canais=[]
    ```
 6. Para automatização, gere 100 testes e avalie se é confiável. Se quiser que gere vários exemplos de uma só vez, pode instruir algo como _Sugestão #k_ no início do schema do trecho de código, para que ele insira um _contador_.
+7. Consulte "várias ideias" e pegue o melhor entre elas. Ou instrua o chat para dar notas entre os pontos positivos e negativos de cada ideia e, quem sabe (outra fala), gerar uma nova ideia a partir dos pontos fortes obtidos.
 
 ## Orientações Gerais
 - """ (tres aspas duplas) ou ``` (tres crases) para separar o código da pergunta.
