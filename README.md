@@ -42,6 +42,7 @@ Usar o chatGPT para automatizar coisas.
    Resumo em XXXXX: _____
    ```
 - Especificar o formato de saída. Exemplo: _Capture os pontos negativos do comentário e me devolva no formato `pontos_negativos=[]`.
+- Sentimentos "qual o sentimento da pessoa sobre o produto no seu comentário? Opções [positivo, misto, neutro, negativo]".
 
 ## Orientações Gerais
 - """ (tres aspas duplas) ou ``` (tres crases) para separar o código da pergunta.
