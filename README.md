@@ -43,6 +43,17 @@ Usar o chatGPT para automatizar coisas.
    ```
 - Especificar o formato de saída. Exemplo: _Capture os pontos negativos do comentário e me devolva no formato `pontos_negativos=[]`.
 - Sentimentos "qual o sentimento da pessoa sobre o produto no seu comentário? Opções [positivo, misto, neutro, negativo]".
+- Aplicações:
+  - Mudar o tom do texto (deixe o texto mais carismático, etc)
+  - Adapte para a plataforma de comunicação TAL.
+  - Converter formatos (csv, python, etc).
+  - verificação ortográfica e gramatical.
+  - respostas automáticas a e-mails.
+    ```
+    Você é um assistente de IA de atendimento ao cliente. Sua tarefa é enviar uma resposta por e-mail a um(a) cliente. Dado o e-mail do(a) cliente delimitado por """", gere uma resposta para agradecer ao cliente por sua avaliação. Se o sentimento for positivo ou neutro, agradeça por sua revisão. Se o sentimento for negativo, peça desculpas e sugira que eles entrem em contato com o atendimento ao cliente. Certifique-se de usar detalhes específicos da resenha. Escreva em um tom conciso e profissional. Assine o e-mail como Atendimento ao cliente.
+    Resenha """..."""
+    Sentimento da Resenha: 
+    ```
 
 ## Orientações Gerais
 - """ (tres aspas duplas) ou ``` (tres crases) para separar o código da pergunta.
@@ -50,3 +61,4 @@ Usar o chatGPT para automatizar coisas.
 - Clareza e especificidade.
 - Forneça contexto.
 - Divida uma pergunta complexa em várias perguntas mais simples.
+
