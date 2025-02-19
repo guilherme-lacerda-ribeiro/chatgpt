@@ -27,7 +27,7 @@
 - Para automatização, gere 100 testes e avalie se é confiável. Se quiser que gere vários exemplos de uma só vez, pode instruir algo como _Sugestão #k_ no início do schema do trecho de código, para que ele insira um _contador_.
 - Consulte "várias ideias" e pegue o melhor entre elas. Ou instrua o chat para dar notas entre os pontos positivos e negativos de cada ideia e, quem sabe (outra fala), gerar uma nova ideia a partir dos pontos fortes obtidos.
 
-## Automatizações
+## Trabalhando com textos
 Usar o chatGPT para automatizar coisas.
 - Dicas gerais para textos:
   - Dividir as tarefas em etapas pode ajudar a simplificar o processo de execução e tornar a resposta mais eficiente.
