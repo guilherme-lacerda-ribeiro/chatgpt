@@ -43,7 +43,10 @@ Usar o chatGPT para automatizar coisas.
    ```
 - Especificar o formato de saída. Exemplo: _Capture os pontos negativos do comentário e me devolva no formato `pontos_negativos=[]`.
 - Sentimentos "qual o sentimento da pessoa sobre o produto no seu comentário? Opções [positivo, misto, neutro, negativo]".
-- Aplicações:
+- Em textos longos, quebre em diálogos diferentes, por causa da limitação de memória dos tokens do chatGPT. Se programaticamente, use bibliotecas que calculam os tokens.
+  - O limite é 4mil tokens, faça o resumo de 2mil tokens, armazene a resposta, gere outro diálogo com mais 2mil tokens, junte as respostas, faça um novo chat agora sim com o resumo dos resumos, desde que não ultrapasse o limite.
+  - https://github.com/langchain-ai/langchain já faz de forma programática
+- Exemplos de aplicação:
   - Mudar o tom do texto (deixe o texto mais carismático, etc)
   - Adapte para a plataforma de comunicação TAL.
   - Converter formatos (csv, python, etc).
@@ -61,4 +64,5 @@ Usar o chatGPT para automatizar coisas.
 - Clareza e especificidade.
 - Forneça contexto.
 - Divida uma pergunta complexa em várias perguntas mais simples.
+- chatGPT tem limites de memória então quando o diálogo fica grande, ele vai esquecendo as interações anteriores.
 
